@@ -1,1 +1,68 @@
-/* Стилизация кнопки */
+.button {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 15px;
+    transition: background 200ms ease-in-out;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.button_primary {
+    background-color: var(--blue-2);
+}
+
+.button_primary:hover {
+    background-color: var(--blue-3);
+}
+
+.button_primary:disabled:hover {
+    background-color: var(--blue-2);
+}
+
+.button_secondary {
+    background-color: var(--purple);
+}
+
+.button_secondary:hover {
+    background-color: var(--purple-2);
+}
+
+.button_secondary:disabled:hover {
+    background-color: var(--purple);
+}
+
+.button_alternate {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+    transition: border 200ms ease-in-out;
+}
+
+.button_alternate:hover {
+    border: 1px solid var(--black);
+}
+
+.button_alternate:disabled:hover {
+    border: 1px solid var(--grey-3);
+}
+
+.demo {
+    padding: 15px;
+}
+
+.demo__button {
+    max-width: 180px;
+}
