@@ -16,13 +16,14 @@
 .accordion__summary {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .accordion__summary::-webkit-details-marker {
     display: none;
 }
 
-.accordion__summary:before {
+.accordion__summary:after {
     content: '';
     display: block;
     width: 16px;
@@ -31,8 +32,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    order: 2;
-    margin-left: auto;
     will-change: transform;
     transform-origin: center;
     transition: transform .2s ease-in-out;
@@ -45,7 +44,7 @@
     line-height: 24px;
 }
 
-.accordion__item[open] .accordion__summary:before{
+.accordion__item[open] .accordion__summary:after{
     transform: rotate(180deg);
 }
 
